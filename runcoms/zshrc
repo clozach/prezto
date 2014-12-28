@@ -11,3 +11,7 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+# Set Sublime Text as default editor
+# https://www.sublimetext.com/docs/3/osx_command_line.html
+export EDITOR='subl -w'
