@@ -15,3 +15,9 @@ fi
 # Set Sublime Text as default editor
 # https://www.sublimetext.com/docs/3/osx_command_line.html
 export EDITOR='subl -w'
+
+# Fix history search key bindings for vi mode
+bindkey -M viins "^R" history-incremental-search-backward
+bindkey -M vicmd "^R" history-incremental-search-backward
+bindkey -M viins "^Q" history-incremental-search-forward
+bindkey -M vicmd "^Q" history-incremental-search-forward
